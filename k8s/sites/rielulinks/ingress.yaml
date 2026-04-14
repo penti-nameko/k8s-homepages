@@ -15,6 +15,6 @@ spec:
             pathType: Prefix
             backend:
               service:
-                name: web-service
+                name: web-rielulinks
                 port:
                   number: 80
