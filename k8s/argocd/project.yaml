@@ -6,10 +6,16 @@ metadata:
 spec:
   description: nginx website project
   sourceRepos:
-    - '*'
+    - https://github.com/penti-nameko/k8s-homepages.git
   destinations:
-    - namespace: '*'
+    - namespace: web-*
       server: https://kubernetes.default.svc
-  clusterResourceWhitelist:
-    - group: '*'
-      kind: '*'
+  namespaceResourceWhitelist:
+    - group: ""
+      kind: ConfigMap
+    - group: ""
+      kind: Service
+    - group: apps
+      kind: Deployment
+    - group: networking.k8s.io
+      kind: Ingress
