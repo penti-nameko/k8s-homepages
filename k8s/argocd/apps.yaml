@@ -14,11 +14,11 @@ spec:
     metadata:
       name: 'web-{{path.basename}}'
     spec:
-      project: websites
+      project: default # 安全のため default に変更
       source:
         repoURL: https://github.com/penti-nameko/k8s-homepages.git
         targetRevision: main
-        path: '{{path.path}}'
+        path: '{{path}}' # ★ {{path.path}} から {{path}} に変更
       destination:
         server: https://kubernetes.default.svc
         namespace: 'web-{{path.basename}}'
