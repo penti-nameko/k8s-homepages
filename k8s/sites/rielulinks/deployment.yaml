@@ -13,6 +13,13 @@ spec:
       labels:
         app: web-rielulinks
     spec:
+      initContainers:
+        - name: init-html
+          image: nginx:latest
+          command: ['sh', '-c', 'cp -r /usr/share/nginx/html/* /data/']
+          volumeMounts:
+            - name: storage
+              mountPath: /data
       containers:
         - name: nginx
           image: nginx:1.27-alpine
