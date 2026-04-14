@@ -14,10 +14,12 @@ spec:
         app: web-rielulinks
     spec:
       initContainers:
-        - name: init-html
-          image: nginx:latest
-          command: ['sh', '-c', 'cp -r /usr/share/nginx/html/* /data/']
+        - name: install
+          image: busybox
+          command: ["cp", "/config/index.html", "/data/index.html"]
           volumeMounts:
+            - name: config-volume
+              mountPath: /config
             - name: storage
               mountPath: /data
       containers:
@@ -51,3 +53,6 @@ spec:
         - name: storage
           persistentVolumeClaim:
             claimName: web-content-pvc
+        - name: config-volume
+          configMap:
+            name: index.html
