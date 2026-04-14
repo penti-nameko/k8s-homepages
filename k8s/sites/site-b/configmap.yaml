@@ -1,0 +1,21 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: site-b-html
+data:
+  index.html: |
+    <!doctype html>
+    <html lang="ja">
+      <head>
+        <meta charset="utf-8" />
+        <title>site-b</title>
+        <link rel="icon" type="image/png" href="/icon.png" />
+      </head>
+      <body>
+        <h1>site-b from nginx</h1>
+        <p>このサイトは icon.png を公開します。</p>
+        <img src="/icon.png" alt="icon" width="64" />
+      </body>
+    </html>
+binaryData:
+  icon.png: iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAQAAAAAYLlVAAAAw0lEQVR4Ae3XQQrCMBAF0P//Z2d2CqnAixFfQvNl3kCXW4fAol8fVVSx1lrL8z6fV8x6HfM+fWvQ4C2QzQJmA0QzQJmA0QzQJmA0QzQJmA0QzQJmA0QzQJmA0QzQJmA0QzQJmA0QzQJmA0QzQJmA0QzQJmA0QzQJmA0QzQJmA0QzQJmA0QzQJmA0QzQJmA0QzQJmA0QzQJmA0QzQJmA0QzQJmA0QzQJmA0Q7QdLQ0dR8N2V8AAAAASUVORK5CYII=
