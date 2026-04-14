@@ -1,7 +1,8 @@
 apiVersion: networking.k8s.io/v1
 kind: Ingress
 metadata:
-  name: site-a
+  name: rielulinks-ingress
+  namespace: rielulinks
 spec:
   ingressClassName: public
   rules:

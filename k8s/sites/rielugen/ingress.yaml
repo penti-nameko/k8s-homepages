@@ -2,6 +2,7 @@ apiVersion: networking.k8s.io/v1
 kind: Ingress
 metadata:
   name: rielu-ingress
+  namespace: rielugen
 spec:
   ingressClassName: public
     rules:
