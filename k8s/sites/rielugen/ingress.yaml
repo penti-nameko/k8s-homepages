@@ -3,6 +3,8 @@ kind: Ingress
 metadata:
   name: rielu-ingress
   namespace: rielugen
+annotations:
+  kubernetes.io/ingress.class: nginx
 spec:
   ingressClassName: public
     rules:
@@ -13,6 +15,6 @@ spec:
             pathType: Prefix
             backend:
               service:
-                name: nginx
+                name: web-service
                 port:
                   number: 80
