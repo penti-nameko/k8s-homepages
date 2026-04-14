@@ -1,7 +1,7 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: nginx
+  name: web-rielulinks
   namespace: web-rielulinks
 spec:
   type: ClusterIP

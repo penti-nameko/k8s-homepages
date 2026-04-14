@@ -1,7 +1,7 @@
 apiVersion: networking.k8s.io/v1
 kind: Ingress
 metadata:
-  name: rielugen-ingress
+  name: web-rielugen-ingress
   namespace: web-rielugen
 spec:
   ingressClassName: nginx
