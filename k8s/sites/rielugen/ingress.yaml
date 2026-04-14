@@ -3,6 +3,8 @@ kind: Ingress
 metadata:
   name: web-rielugen-ingress
   namespace: web-rielugen
+  annotations:
+    kubernetes.io/ingress.class: "nginx"
 spec:
   ingressClassName: nginx
   rules:
