@@ -3,6 +3,9 @@ kind: Service
 metadata:
   name: nginx
 spec:
+  ipFamilyPolicy: SingleStack
+  ipFamilies:
+    - IPv6
   selector:
     app: nginx
   ports:

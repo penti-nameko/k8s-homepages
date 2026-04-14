@@ -3,8 +3,8 @@ kind: Ingress
 metadata:
   name: rielu-ingress
 spec:
-  ingressClassName: nginx
-  rules:
+  ingressClassName: public
+    rules:
     - host: rielugen.uniproject.jp
       http:
         paths:

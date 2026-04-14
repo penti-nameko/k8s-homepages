@@ -3,7 +3,7 @@ kind: Ingress
 metadata:
   name: site-a
 spec:
-  ingressClassName: nginx
+  ingressClassName: public
   rules:
     - host: rielulinks.uniproject.jp
       http:
