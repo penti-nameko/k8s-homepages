@@ -19,7 +19,7 @@ spec:
           ports:
             - containerPort: 80
           volumeMounts:
-            - name: html
+            - name: storage
               mountPath: /usr/share/nginx/html # マウント先
       volumes:
         - name: storage
