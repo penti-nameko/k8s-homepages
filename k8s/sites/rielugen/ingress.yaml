@@ -4,9 +4,9 @@ metadata:
   name: web-rielugen-ingress
   namespace: web-rielugen
   annotations:
-    kubernetes.io/ingress.class: "nginx"
+    kubernetes.io/ingress.class: "public"
 spec:
-  ingressClassName: nginx
+  ingressClassName: public
   rules:
     - host: rielugen.uniproject.jp
       http:
