@@ -3,8 +3,6 @@ kind: Deployment
 metadata:
   name: web-rielulinks
   namespace: web-rielulinks
-  annotations:
-    argocd.argoproj.io/sync-options: Replace=true
 spec:
   replicas: 2
   selector:
