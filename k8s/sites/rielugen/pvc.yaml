@@ -1,0 +1,13 @@
+apiVersion: v1
+kind: PersistentVolumeClaim
+metadata:
+  name: web-content-pvc
+  # namespace は ApplicationSet の template で指定されているので不要
+spec:
+  accessModes:
+    - ReadWriteOnce
+  resources:
+    requests:
+      storage: 1Gi # 必要な容量
+  # MicroK8s のデフォルトストレージクラス（hostpath）を使用する場合
+  storageClassName: microk8s-hostpath

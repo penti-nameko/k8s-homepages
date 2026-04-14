@@ -39,8 +39,8 @@ spec:
             periodSeconds: 5
           volumeMounts:
             - name: html
-              mountPath: /usr/share/nginx/html
+              mountPath: /usr/share/nginx/html # マウント先
       volumes:
-        - name: html
-          configMap:
-            name: index.html
+        - name: storage
+          persistentVolumeClaim:
+            claimName: web-content-pvc
