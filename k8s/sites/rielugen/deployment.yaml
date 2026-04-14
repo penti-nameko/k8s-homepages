@@ -13,15 +13,6 @@ spec:
       labels:
         app: web-rielugen
     spec:
-      initContainers:
-        - name: install
-          image: busybox
-          command: ["cp", "/config/index.html", "/data/index.html"]
-          volumeMounts:
-            - name: config-volume
-              mountPath: /config
-            - name: storage
-              mountPath: /data
       containers:
         - name: nginx
           image: nginx:1.27-alpine
@@ -47,12 +38,9 @@ spec:
             initialDelaySeconds: 5
             periodSeconds: 5
           volumeMounts:
-            - name: storage
+            - name: html
               mountPath: /usr/share/nginx/html # マウント先
       volumes:
-        - name: storage
-          persistentVolumeClaim:
-            claimName: web-content-pvc
-        - name: config-volume
+        - name: html
           configMap:
-            name: index.html
+            name: index-html

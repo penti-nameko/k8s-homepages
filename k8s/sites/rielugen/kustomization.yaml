@@ -3,7 +3,7 @@ kind: Kustomization
 namespace: web-rielugen
 resources:
   - namespace.yaml
+  - configmap.yaml
   - deployment.yaml
   - service.yaml
   - ingress.yaml
-  - pvc.yaml
