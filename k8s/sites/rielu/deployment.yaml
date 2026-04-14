@@ -24,4 +24,5 @@ spec:
       volumes:
         - name: html
           configMap:
-            name: index.html
+            name: in
+            dex.html

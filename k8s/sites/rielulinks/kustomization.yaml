@@ -3,7 +3,10 @@ kind: Kustomization
 namespace: web-rielulinks
 resources:
   - namespace.yaml
-  - configmap.yaml
   - deployment.yaml
   - service.yaml
   - ingress.yaml
+configMapGenerator:
+  - name: index.html
+    files:
+      - index.html
