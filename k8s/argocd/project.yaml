@@ -8,9 +8,7 @@ spec:
   sourceRepos:
     - '*'
   destinations:
-    - namespace: site-a
-      server: https://kubernetes.default.svc
-    - namespace: site-b
+    - namespace: '*'
       server: https://kubernetes.default.svc
   clusterResourceWhitelist:
     - group: '*'
