@@ -8,7 +8,7 @@ spec:
   ipFamilies:
     - IPv6
   selector:
-    app: nginx
+    app: web-rielulinks
   ports:
     - port: 80
       targetPort: 80
