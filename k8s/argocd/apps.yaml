@@ -6,7 +6,7 @@ metadata:
 spec:
   project: websites
   source:
-    repoURL: REPLACE_WITH_YOUR_REPO_URL
+    repoURL: https://github.com/penti-nameko/k8s-homepages.git
     targetRevision: HEAD
     path: k8s/sites/site-a
   destination:
@@ -25,7 +25,7 @@ metadata:
 spec:
   project: websites
   source:
-    repoURL: REPLACE_WITH_YOUR_REPO_URL
+    repoURL: https://github.com/penti-nameko/k8s-homepages.git
     targetRevision: HEAD
     path: k8s/sites/rielugen
   destination:
@@ -45,7 +45,7 @@ metadata:
 spec:
   project: websites
   source:
-    repoURL: REPLACE_WITH_YOUR_REPO_URL
+    repoURL: https://github.com/penti-nameko/k8s-homepages.git
     targetRevision: HEAD
     path: k8s/sites/rielulinks
   destination:
