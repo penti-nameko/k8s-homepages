@@ -7,7 +7,7 @@ spec:
   generators:
     - git:
         repoURL: https://github.com/penti-nameko/k8s-homepages.git
-        revision: HEAD
+        revision: main
         directories:
           - path: k8s/sites/*
   template:
@@ -17,7 +17,7 @@ spec:
       project: websites
       source:
         repoURL: https://github.com/penti-nameko/k8s-homepages.git
-        targetRevision: HEAD
+        targetRevision: main
         path: '{{path.path}}'
       destination:
         server: https://kubernetes.default.svc

@@ -2,7 +2,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: nginx
-  namespace: rielulinks
+  namespace: web-rielulinks
 spec:
   replicas: 2
   selector:
