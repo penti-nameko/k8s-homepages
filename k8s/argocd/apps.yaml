@@ -6,7 +6,7 @@ metadata:
 spec:
   generators:
     - git:
-        repoURL: REPLACE_WITH_YOUR_REPO_URL
+        repoURL: https://github.com/penti-nameko/k8s-homepages.git
         revision: HEAD
         directories:
           - path: k8s/sites/*
@@ -16,7 +16,7 @@ spec:
     spec:
       project: websites
       source:
-        repoURL: REPLACE_WITH_YOUR_REPO_URL
+        repoURL: https://github.com/penti-nameko/k8s-homepages.git
         targetRevision: HEAD
         path: '{{path.path}}'
       destination:
