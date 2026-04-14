@@ -1,11 +1,11 @@
 apiVersion: networking.k8s.io/v1
 kind: Ingress
 metadata:
-  name: site-a
+  name: rielu-ingress
 spec:
   ingressClassName: nginx
   rules:
-    - host: site-a.example.local
+    - host: rielu.uniproject.jp
       http:
         paths:
           - path: /

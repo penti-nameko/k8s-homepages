@@ -23,4 +23,4 @@ spec:
       volumes:
         - name: html
           configMap:
-            name: site-a-html
+            name: index.html

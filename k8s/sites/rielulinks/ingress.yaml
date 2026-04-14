@@ -1,11 +1,11 @@
 apiVersion: networking.k8s.io/v1
 kind: Ingress
 metadata:
-  name: site-b
+  name: site-a
 spec:
   ingressClassName: nginx
   rules:
-    - host: site-b.example.local
+    - host: rielulinks.uniproject.jp
       http:
         paths:
           - path: /
