@@ -4,9 +4,7 @@ metadata:
   name: nginx
   namespace: web-rielugen
 spec:
-  ipFamilyPolicy: SingleStack
-  ipFamilies:
-    - IPv6
+  type: ClusterIP
   selector:
     app: web-rielugen
   ports:

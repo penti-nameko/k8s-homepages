@@ -4,9 +4,7 @@ metadata:
   name: nginx
   namespace: web-rielulinks
 spec:
-  ipFamilyPolicy: SingleStack
-  ipFamilies:
-    - IPv6
+  type: ClusterIP
   selector:
     app: web-rielulinks
   ports:
